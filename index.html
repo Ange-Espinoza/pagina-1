@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Angélica Espinoza</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+        <style>
+            @media (min-width: 768px) {
+                .container { max-width: 720px;}
+            }
+        </style>
+    </head>
+    <body class="bg-success-subtle bg-gradient">
+        <header class="container">
+            <div class="row">
+                <div class="col-12 py-3">
+                    <h2 class="text-center mt-5 fs-5 fw-bolder">ANGÉLICA ESPINOZA </h2>
+                    <h1 class="text-center mt-3 mb-4 fs-2">ARDU-AYUDA</h1>
+                    <p class="lead text-center mx-auto w-75">Este sitio web permitirá entender mejor el cómo utilizar una serie de objetos programados con Arduino para ayudar a personas mayores o con alguna discapacidad. </p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 py-3">
+                            <h3 class="text-center py-3">PROTO-PERSONAS</h3>
+                            <!--PROTO-PERSONA 1-->
+                            <div class="row align-items-center bg-white rounded mb-4 g-0 shadow-sm">
+                                <div class="col-sm-4">
+                                    <img src="img/1.png" class="w-100" />
+                                </div>
+                                <div class="col-sm-8 p-4 small">
+                                    <h4>Carlos (80 años)</h4>
+                                    <p><em>Educación media. </em></p>
+                                    <p>Vive solo en una vivienda social en el sur. No sabe usar internet, y es la primera vez que tiene acceso a un computador. Debe usar el objeto en sí mismo, pero no sabe cómo. Es irascible, y aunque siempre busca ser independiente, se frustra cuando no cree tener "lo que hace falta".</p>
+                                    <p class="text-secondary">Busca entender cómo usar uno de los objetos que aquí se exhibirán. Lo buscaría varias veces a lo largo del proceso de utilización ya que se le olvidan algunas cosas, pero no puede, ya que solo tiene acceso a internet cuando va su familia a visitarlo y le comparten de este.</p>
+                                </div>
+                            </div>
+                            <!--PROTO-PERSONA 2-->
+                            <div class="row align-items-center bg-white rounded mb-4 g-0 shadow-sm">
+                                <div class="col-sm-4 order-sm-2">
+                                    <img src="img/2.png" class="w-100" />
+                                </div>
+                                <div class="col-sm-8 order-sm-1 p-4 small">
+                                    <h4>Pedro (30 años)</h4>
+                                    <p><em>Licenciado. </em></p>
+                                    <p>Vive con su pareja en una casa en Santiago. Sabe usar internet y disfruta navegar en él. Siempre ha cuidado de sí mismo, así que conoce ciertos conceptos médicos, pero nunca ha usado uno de los objetos que estarán en esta página. </p>
+                                    <p class="text-secondary">Busca entender cómo usar uno de los objetos que aquí se exhibirán, y quizás averiguar sobre otros. Lo busca en el momento en que obtiene el objeto, ya que es su primera vez utilizando algo así, y si este le gusta, busca otros más. Es un usuario tanto de celular como de computador.</p>
+                                </div>
+                            </div>
+                            <!--PROTO-PERSONA 3-->
+                            <div class="row align-items-center bg-white rounded mb-5 g-0 shadow-sm">
+                                <div class="col-sm-4">
+                                    <img src="img/3.png" class="w-100" />
+                                </div>
+                                <div class="col-sm-8 p-4 small">
+                                    <h4>Tamara (27 años)</h4>
+                                    <p><em>Enfermera. </em></p>
+                                    <p>Vive en Santiago Centro con sus padres y su hermano Luis. Este último será el usuario final de uno de los objetos, pero será asistido por ella. Siempre está estudiando más sobre salud, y ya ha usado algunos de los objetos que estarán en esta página. Nunca ha necesitado ayuda para entender cómo funcionan.</p>
+                                    <p class="text-secondary">Busca refrescar su memoria a veces, cuando vuelve a utilizar un objeto que hace tiempo no usaba, o cuando quiere mostrarle los objetos a alguien más. Usa su télefono con un plan de datos ilimitados.</p>
+                                </div>
+                            </div>
+                            <!--NO MÁS PROTO-PERSONAS-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-light-subtle border-top border-bottom border-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 py-3">
+                            <h3 class="text-center mt-5 mb-4 fs-4">ANTECEDENTES</h3>
+                            <div class="row row-cols-1 row-cols-sm-3 g-4 pb-5" id="antecedentes"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container text-white-50">
+                <div class="row py-3">
+                    <div class="col-12">
+                        <p class="d-flex justify-content-between small py-1 px-4 m-0">
+                            <a href="index.html" class="fw-bold">ARDU-AYUDA</a>
+                            <a href="#" class="fw-bold">Angélica Espinoza © 2022</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            document.querySelectorAll("a").forEach((a) => a.classList.add("link-dark"));
+            var datos = [
+                {
+                    thumbnail: "img/4.png",
+                    title: "Aquí debería ir una página muy intuitiva...",
+                    screenshot: "img/7.png",
+                    descriptor: "¡Como esta!",
+                    url: "https://www.ville.sorel-tracy.qc.ca/",
+                },
+                {
+                    thumbnail: "img/5.png",
+                    title: "..., pero igualmente dinámica.",
+                    screenshot: "img/8.png",
+                    descriptor: "¡Como esta!",
+                    url: "https://www.reuters.com/graphics/TAIWAN-CHINA/byvrjrmgnve/",
+                },
+                {
+                    thumbnail: "img/6.png",
+                    title: "Atractiva, que no se vuelva demasiado repetitiva.",
+                    screenshot: "img/9.png",
+                    descriptor: "¡Como esta!",
+                    url: "https://multimedia.scmp.com/culture/article/valentine/",
+                },
+            ];
+            datos.forEach((d, i) => {
+                document.getElementById("antecedentes").innerHTML += '<div class="col"><div class="card border-0 h-100 shadow-sm"><img src="' + d.thumbnail + '" class="card-img-top"/><div class="card-body"><h6 class="card-title m-0">' + d.title + '</h6></div><div class="card-footer small border-0"><a href="#" onclick = "detalle(' + i + ')" class="stretched-link text-secondary text-decoration-none">Ver análisis &rarr;</a></div></div></div>';
+            });
+
+            const antecedente = document.querySelector("main");
+            function detalle(nro) {
+                antecedente.innerHTML = '<div class="container"><div class="row"><div class="col-11 mx-auto"><p class="text-center my-4"><a href="#" onClick="window.location.reload()" class="btn btn-light btn-sm shadow-sm fs-6">Volver</a></p><p><a href="' + datos[nro].url + '" class="fw-bold text-dark text-decoration-none" target="_blank">' + datos[nro].title + '</a> | ' + datos[nro].descriptor + '</p><img src="' + datos[nro].screenshot + '" class="w-100 mb-5"></div></div></div>';
+            }
+        </script>
+    </body>
+</html>
